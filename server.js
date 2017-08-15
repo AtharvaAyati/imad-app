@@ -25,6 +25,10 @@ app.get('/article-three',function(req,res) {
     res.send('article three request is served');
 });
 
+app.get('/home-page',function(req,res) {
+    res.send('home page is open for all');
+});
+
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
